@@ -172,7 +172,8 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
+    background-color: rgb(240, 240, 240);
+    font-family: "Inconsolata", monospace, serif;
     font-size: 1em;
 }
 

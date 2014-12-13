@@ -1,9 +1,9 @@
-@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
+@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Inconsolata:400,600|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
 body {
   background-color: #ffffff;
-  color: #7f8c8d;
+  color: #000000;
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
@@ -54,7 +54,7 @@ li {
   padding-left: 0.8em;
 }
 pre {
-  font-family: "Consolas", Courier, monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 1em;
   line-height: 1.2em;
   padding: 1em;
@@ -64,7 +64,7 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-  background-color: rgba(0, 0, 0, 0.05);
+
 }
 p code {
   font-family: "Consolas", Courier, monospace;
