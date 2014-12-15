@@ -58,13 +58,7 @@ pre {
   font-size: 1em;
   line-height: 1.2em;
   padding: 1em;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-
+  overflow-x: scroll;
 }
 p code {
   font-family: "Consolas", Courier, monospace;

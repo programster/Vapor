@@ -175,14 +175,7 @@ samp {
     background-color: rgb(240, 240, 240);
     font-family: "Inconsolata", monospace, serif;
     font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-
-pre {
-    white-space: pre-wrap;
+    overflow-x: scroll;
 }
 
 /**
