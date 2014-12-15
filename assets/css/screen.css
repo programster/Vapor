@@ -25,6 +25,13 @@ dd {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
 h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 0em;
+}
+h1,
 .post-meta {
   text-align: center;
 }
@@ -60,6 +67,10 @@ pre {
   padding: 1em;
   overflow-x: auto;
   white-space: pre-line;
+}
+p,
+ul {
+  margin-top: 0px;
 }
 p code {
   font-family: "Consolas", Courier, monospace;
@@ -244,6 +255,10 @@ h2 {
   border-bottom: 1px solid #EEE;
   padding-bottom: 0.3em;
   font-size: 2em;
+  margin-bottom:0.3em;
+}
+h3 {
+  margin-top: 1.6em;
 }
 section.post-content img {
   display: block;
