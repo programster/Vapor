@@ -58,7 +58,7 @@ pre {
   font-size: 1em;
   line-height: 1.2em;
   padding: 1em;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 p code {
   font-family: "Consolas", Courier, monospace;
