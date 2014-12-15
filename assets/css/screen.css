@@ -239,10 +239,11 @@ h1.blog-title a:hover {
   text-decoration: none;
 }
 h2 {
-  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   margin-top: 2em;
   text-transform: uppercase;
-  font-weight: 300;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 0.3em;
+  font-size: 2em;
 }
 section.post-content img {
   display: block;
