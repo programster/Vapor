@@ -126,6 +126,13 @@ article.preview p.readmore {
 h1.blog-title,
 h2.blog-description {
   text-align: center;
+  font-weight: 300;
+}
+h2.blog-description {
+  font-family: "Merriweather";
+  font-size: 1.3em;
+  margin-top: 0em;
+  color: #7F8C8D;
 }
 h1.blog-title {
   font-size: 48px;
