@@ -129,9 +129,8 @@ h2.blog-description {
   font-weight: 300;
 }
 h2.blog-description {
-  font-family: "Merriweather";
-  font-size: 1.3em;
-  margin-top: 0em;
+  font-family: "Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;
+  font-size: 1.5em;
   color: #7F8C8D;
 }
 h1.blog-title {
@@ -139,6 +138,7 @@ h1.blog-title {
   line-height: 52px;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-weight: 400;
   padding: 0;
 }
 h2.blog-description {
@@ -271,6 +271,8 @@ h3 {
 section.post-content img {
   display: block;
   margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   max-width: 100%;
 }
 section.preview.archive h2 {
