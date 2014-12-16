@@ -75,7 +75,7 @@ pre {
   line-height: 1.2em;
   padding: 1em;
   overflow-x: auto;
-  white-space: pre-line;
+  white-space: pre;
 }
 p,
 ul {

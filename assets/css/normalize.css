@@ -175,7 +175,7 @@ samp {
     background-color: rgb(240, 240, 240);
     font-family: "Inconsolata", monospace, serif;
     font-size: 1em;
-    white-space: pre-line;
+    white-space: pre;
     overflow-x: auto;
 }
 
