@@ -2,24 +2,27 @@
 
 // Imports
 
-@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
+@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Inconsolata:400,600|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 // Variables
 
 @bodyBackgroundColor: #ffffff;
 @baseFontFamily: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@baseFontColor: #7f8c8d;
+@baseFontColor: #000000;
+@secondaryFontColor: #7f8c8d;
+@baseFontSize: 1em;
+@fontSizeStepping: 1.5;
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
 @headerFontColor: #151515;
 @headerLinkColor: @headerFontColor;
 @secondaryFontFamily: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@preFontFamily: "Consolas", Courier, monospace;
+@preFontFamily: "Inconsolata", Courier, monospace;
 @tableFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @linkColor: #3498db;
 @linkColorHover: darken(@linkColor, 50%);
 @borderColor: #ecf0f1;
-@subtleColor: rgba(0,0,0,0.05);
+@subtleColor: rgb(240,240,240);
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
 
@@ -32,32 +35,79 @@
 body {
     background-color: @bodyBackgroundColor;
     color: @baseFontColor;
-    font-size: 15px;
+    font-size: @baseFontSize;
+    font-family: @baseFontFamily;
     font-weight: 100;
-    line-height: 1.6em;
+    line-height: 150%;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-    body * {
-        max-height: 1000000em
-    }
+body * {
+    max-height: 1000000em
+}
 
-h1, 
-h2, 
-h3, 
-h4, 
-p, 
-li, 
-dt, 
-dd {
-    font-family: @baseFontFamily;
+/* === Clearly show the mathematical relationship between font sizes === */
+h3 {
+    font-size: @baseFontSize;
+}
+
+h2 {
+    font-size: @baseFontSize * @fontSizeStepping;
+}
+
+h1 {
+    font-size: @baseFontSize * (@fontSizeStepping * @fontSizeStepping);
+}
+
+/* ===================================================================== */
+
+/* === Define Margins === */
+
+// Set margins to 0 before overriding 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: @baseFontSize * 3;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    margin-top: @baseFontSize * 2;
+}
+
+// paragraphs should have a space between each other.
+p + p {
+  margin-top: @baseFontSize;
+}
+
+/* =================================== */
+
+h1 {
+    color: @headerFontColor;
+    font-family: @headerFontFamily;
+    font-weight: 400;
 }
 
 h1, 
 .post-meta {
     text-align: center
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid @subtleColor;
 }
 
 a, 
@@ -77,9 +127,7 @@ p,
 li, 
 dt, 
 dd {
-    font-size: 18px;
     font-weight: 100;
-    line-height: 30px;
 }
 
 dt {
@@ -91,34 +139,23 @@ li {
 }
 
 pre {
-    font-family: @preFontFamily;
-    font-size: 1em;
-    line-height: 1.2em;
     padding: 1em;
-    white-space: pre;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
     background-color: @subtleColor;
+    overflow-x: auto;
+    border-radius: 5px;
 }
 
-p code {
+pre code {
+    white-space: pre;
+}
+
+p code,
+pre code {
+    background-color: @subtleColor;
     font-family: @preFontFamily;
-    font-size: .8em;
-    line-height: 1.2em;
 }
 
-h1 {
-    color: @headerFontColor;
-    font-family: @headerFontFamily;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 42px;
-    margin: 0;
-    padding: 0;
-}
+
 
 #site-head, 
 article, 
@@ -141,7 +178,8 @@ article.preview {
       font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
       margin-top: 1em;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 300;
+      font-size: @baseFontSize * 1.1;
     }
 }
 
@@ -168,19 +206,22 @@ h2.blog-description {
 }
 
 h1.blog-title {
-    font-size: 48px;
-    line-height: 52px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    font-size: (@baseFontSize * 1.2 * 1.2 * 1.2 * 1.2 * 1.2);
+    line-height: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0;
 }
 
 h2.blog-description {
+    margin-top: 0em;
+    font-family: @secondaryFontFamily;
     border-bottom: 1px solid @borderColor;
     border-top: 1px solid @borderColor;
     margin-bottom: 2em;
     padding: .5em 1em;
-    line-height: 1.2em;
+    color: @secondaryFontColor;
+    font-weight: 300;
 }
 
 section.footer-description {
@@ -223,8 +264,8 @@ section.author h4 {
 
 section.author p.attr, 
 section.share p.info {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: (@baseFontSize * 0.9);
+    line-height: 200%;
     text-transform: uppercase;
     font-family: @secondaryFontFamily;
 }
@@ -243,16 +284,14 @@ section.share p.info {
 }
 
 section.author p.bio {
-    font-size: 16px;
+    font-size: (@baseFontSize * 0.9);
     margin-left: 82px;
-    line-height: 1.4em;
 }
 
 blockquote {
     font-family: @secondaryFontFamily;
-    font-size: 1.6em;
+    font-size: (@baseFontSize);
     font-weight: 300;
-    line-height: 1.2em;
     font-style: italic;
     text-transform: uppercase;
     border-left: .5em solid @subtleColor;
@@ -264,7 +303,6 @@ blockquote p {
     font-family: @secondaryFontFamily;
     font-size: 1.6em;
     font-weight: 300;
-    line-height: 1.2em;
     font-style: italic;
     text-transform: uppercase;
 }
@@ -272,7 +310,7 @@ blockquote p {
 .post-meta {
     color: @postmetaColor;
     font-family: @secondaryFontFamily;
-    font-size: 20px;
+    font-size: (@baseFontSize * 1.2);
     font-weight: 300;
     margin-top: 1em;
     margin-bottom: 1.2em;
@@ -307,13 +345,6 @@ h1.blog-title a:focus,
 h1.blog-title a:hover {
     color: @linkColor;
     text-decoration: none;
-}
-
-h2 {
-    font-family: @secondaryFontFamily;
-    margin-top: 2em;
-    text-transform: uppercase;
-    font-weight: 300;
 }
 
 section.post-content img {
@@ -351,7 +382,7 @@ footer {
 footer section {
     font-family: @secondaryFontFamily;
     font-weight: 300;
-    font-size: 18px;
+    font-size: (@baseFontSize);
     margin: 0 auto;
     max-width: 600px;
     text-transform: uppercase;
@@ -383,7 +414,7 @@ nav {
         li {
             display: inline-block;
             font-family: @secondaryFontFamily;
-            font-size: 18px;
+            font-size: (@baseFontSize);
             font-weight: 300;
             margin: 0;
             padding: 0 .5em;
@@ -429,7 +460,7 @@ a.archive-link {
     border-top: 1px solid @borderColor;
     display: block;
     font-family: @secondaryFontFamily;
-    font-size: 24px;
+    font-size: (@baseFontSize * 2);
     font-weight: 300;
     margin-bottom: 3em;
     margin-top: 3em;
@@ -444,8 +475,8 @@ a.archive-link {
     max-width: 600px;
     font-family: @secondaryFontFamily;
     text-transform: uppercase;
-    font-size: 20px;
-    color: @baseFontColor;
+    font-size: 1.3em;
+    color: @secondaryFontColor;;
     text-align: center;
     padding: 0.5em 0;
 }
@@ -563,7 +594,7 @@ a.archive-link {
 }
 
 .icon-ghost {
-    font-size: 12px;
+    font-size: (@baseFontSize * 0.5);
     position: relative;
     top: -1px;
 }

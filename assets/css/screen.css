@@ -1,12 +1,14 @@
 @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Inconsolata:400,600|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
+
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
 body {
   background-color: #ffffff;
   color: #000000;
-  font-size: 15px;
+  font-size: 1em;
+  font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 100;
-  line-height: 1.6em;
+  line-height: 150%;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -14,29 +16,52 @@ body {
 body * {
   max-height: 1000000em;
 }
+/* === Clearly show the mathematical relationship between font sizes === */
+h3 {
+  font-size: 1em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 2.25em;
+}
+/* ===================================================================== */
+/* === Define Margins === */
 h1,
 h2,
 h3,
 h4,
 p,
-li,
-dt,
-dd {
-  font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-bottom: 0em;
+h2 {
+  margin-top: 3em;
+  margin-bottom: 0.3em;
+}
+h3 {
+  margin-top: 2em;
 }
 p + p {
   margin-top: 1em;
 }
+/* =================================== */
+h1 {
+  color: #151515;
+  font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-weight: 400;
+}
 h1,
 .post-meta {
   text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #f0f0f0;
 }
 a,
 a:visited {
@@ -48,14 +73,6 @@ a:visited {
 a:focus,
 a:hover {
   color: #02090e;
-}
-p,
-h3,
-li,
-dt,
-dd {
-  font-size: 1.2em;
-  line-height: 150%;
 }
 p,
 li,
@@ -70,30 +87,18 @@ li {
   padding-left: 0.8em;
 }
 pre {
-  font-family: "Inconsolata", monospace;
-  font-size: 1em;
-  line-height: 1.2em;
   padding: 1em;
+  background-color: #f0f0f0;
   overflow-x: auto;
+  border-radius: 5px;
+}
+pre code {
   white-space: pre;
 }
-p,
-ul {
-  margin-top: 0px;
-}
-p code {
-  font-family: "Consolas", Courier, monospace;
-  font-size: .8em;
-  line-height: 1.2em;
-}
-h1 {
-  color: #151515;
-  font-family: "Roboto Slab", "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 42px;
-  margin: 0;
-  padding: 0;
+p code,
+pre code {
+  background-color: #f0f0f0;
+  font-family: "Inconsolata", Courier, monospace;
 }
 #site-head,
 article,
@@ -114,7 +119,8 @@ article.preview p.readmore {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   margin-top: 1em;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.1em;
 }
 /* === Header === */
 #blog-logo {
@@ -127,7 +133,6 @@ article.preview p.readmore {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
   background-color: #ffffff;
@@ -135,27 +140,23 @@ article.preview p.readmore {
 h1.blog-title,
 h2.blog-description {
   text-align: center;
-  font-weight: 300;
-}
-h2.blog-description {
-  font-family: "Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;
-  font-size: 1.5em;
-  color: #7F8C8D;
 }
 h1.blog-title {
-  font-size: 48px;
-  line-height: 52px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-weight: 400;
+  font-size: 2.48832em;
+  line-height: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 0;
 }
 h2.blog-description {
+  margin-top: 0em;
+  font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   border-bottom: 1px solid #ecf0f1;
   border-top: 1px solid #ecf0f1;
   margin-bottom: 2em;
   padding: .5em 1em;
-  line-height: 1.2em;
+  color: #7f8c8d;
+  font-weight: 300;
 }
 section.footer-description {
   margin-bottom: 1em;
@@ -190,8 +191,8 @@ section.author h4 {
 }
 section.author p.attr,
 section.share p.info {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 0.9em;
+  line-height: 200%;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
@@ -206,18 +207,16 @@ section.share p.info {
   display: inline-block;
 }
 section.author p.bio {
-  font-size: 16px;
+  font-size: 0.9em;
   margin-left: 82px;
-  line-height: 1.4em;
 }
 blockquote {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 300;
-  line-height: 1.2em;
   font-style: italic;
   text-transform: uppercase;
-  border-left: 0.5em solid rgba(0, 0, 0, 0.05);
+  border-left: 0.5em solid #f0f0f0;
   margin-left: 1em;
   padding-left: 1em;
 }
@@ -225,14 +224,13 @@ blockquote p {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
-  line-height: 1.2em;
   font-style: italic;
   text-transform: uppercase;
 }
 .post-meta {
   color: #95a5a6;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 300;
   margin-top: 1em;
   margin-bottom: 1.2em;
@@ -246,7 +244,6 @@ div.authorimage {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
   margin-right: 10px;
@@ -265,23 +262,9 @@ h1.blog-title a:hover {
   color: #3498db;
   text-decoration: none;
 }
-h2 {
-  margin-top: 2em;
-  text-transform: uppercase;
-  border-bottom: 1px solid #EEE;
-  padding-bottom: 0.3em;
-  font-size: 2em;
-  line-height: 110%;
-  margin-bottom:0.3em;
-}
-h3 {
-  margin-top: 1.6em;
-}
 section.post-content img {
   display: block;
   margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
   max-width: 100%;
 }
 section.preview.archive h2 {
@@ -300,7 +283,7 @@ img.userimage {
 }
 /* === Footer === */
 footer {
-  background: rgba(0, 0, 0, 0.05);
+  background: #f0f0f0;
   margin: 4em 0 0;
   padding: 2em 0;
   text-align: center;
@@ -308,7 +291,7 @@ footer {
 footer section {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1em;
   margin: 0 auto;
   max-width: 600px;
   text-transform: uppercase;
@@ -339,7 +322,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
   margin: 0;
   padding: 0 .5em;
@@ -380,7 +363,7 @@ a.archive-link {
   border-top: 1px solid #ecf0f1;
   display: block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  font-size: 24px;
+  font-size: 2em;
   font-weight: 300;
   margin-bottom: 3em;
   margin-top: 3em;
@@ -394,7 +377,7 @@ a.archive-link {
   max-width: 600px;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.3em;
   color: #7f8c8d;
   text-align: center;
   padding: 0.5em 0;
@@ -434,8 +417,8 @@ a.archive-link {
   border-collapse: collapse !important;
 }
 .gist .gist-file {
-  font-family: "Consolas", Courier, monospace;
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  font-family: "Inconsolata", Courier, monospace;
+  border: 1px solid #f0f0f0 !important;
 }
 .gist .gist-file .gist-meta {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif !important;
@@ -443,6 +426,7 @@ a.archive-link {
   text-transform: uppercase !important;
   display: none !important;
   /* Hide GitHub attribution */
+
 }
 .gist .gist-file .gist-meta a:visited {
   color: #3498db !important;
@@ -451,13 +435,14 @@ a.archive-link {
   background: #fdfdfd !important;
   border-bottom: none !important;
   /* Hide GitHub attribution */
+
 }
 .gist .gist-file .gist-data .line-numbers {
   border-right: none !important;
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-meta {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #f0f0f0 !important;
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-data .line-pre {
@@ -494,7 +479,7 @@ a.archive-link {
   content: "\e001";
 }
 .icon-ghost {
-  font-size: 12px;
+  font-size: 0.5em;
   position: relative;
   top: -1px;
 }
@@ -523,6 +508,15 @@ table tbody tr:nth-child(even) {
 }
 table tfoot {
   border-top: 1px solid #ecf0f1;
+}
+/*
+ * Prevent google+ comment system from creating horizontal scroll on 
+ * mobile devices
+ * http://www.andrea-cardinale.com/css/make-responsive-the-google-plus-comments-widget.html
+ */
+div[id^='___comments_'],
+div[id^='___comments_'] iframe {
+  width: 100% !important;
 }
 /* === Media Queries === */
 @media only screen and (min-width: 320px) and (max-width: 500px) {
