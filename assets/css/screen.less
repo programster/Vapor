@@ -44,26 +44,39 @@ body {
         max-height: 1000000em
     }
 
-h1, h2, h3, h4, p, li, dt, dd {
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+li, 
+dt, 
+dd {
     font-family: @baseFontFamily;
 }
 
-h1, .post-meta {
+h1, 
+.post-meta {
     text-align: center
 }
 
-a, a:visited {
+a, 
+a:visited {
     color: @linkColor;
     text-decoration: none;
     transition: color ease 0.7s;
     -webkit-transition: color ease 0.7s;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
     color: @linkColorHover;
 }
 
-p, li, dt, dd {
+p, 
+li, 
+dt, 
+dd {
     font-size: 18px;
     font-weight: 100;
     line-height: 30px;
@@ -107,18 +120,23 @@ h1 {
     padding: 0;
 }
 
-#site-head, article, article.preview, a.archive-link, .article-nav {
+#site-head, 
+article, 
+article.preview, 
+a.archive-link, 
+.article-nav {
     margin: 20px auto;
     max-width: @maxPageWidth;
     width: 90%;
 }
 
-    #site-head img {
-        max-width: 100%
-    }
+#site-head img {
+    max-width: 100%
+}
 
 article.preview {
     margin-bottom: 4em;
+    
     p.readmore {
       font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
       margin-top: 1em;
@@ -144,7 +162,8 @@ article.preview {
     }
 }
 
-h1.blog-title, h2.blog-description {
+h1.blog-title, 
+h2.blog-description {
     text-align: center
 }
 
@@ -168,13 +187,15 @@ section.footer-description {
     margin-bottom: 1em;
 }
 
-header.article-header, header.page-header {
+header.article-header, 
+header.page-header {
     margin-bottom: 3em
 }
 
 /* === Body === */
 
-section.author, section.share {
+section.author, 
+section.share {
     width: 100%;
     text-align: left;
     text-transform: none;
@@ -187,10 +208,12 @@ section.share {
     text-align: right;
 }
 
-    section.author h4, section.author p, section.share p {
-        padding: 0;
-        margin: 0;
-    }
+section.author h4, 
+section.author p, 
+section.share p {
+    padding: 0;
+    margin: 0;
+}
 
 section.author h4 {
     font-family: @headerFontFamily;
@@ -198,7 +221,8 @@ section.author h4 {
     margin-bottom: 4px;
 }
 
-section.author p.attr, section.share p.info {
+section.author p.attr, 
+section.share p.info {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -236,14 +260,14 @@ blockquote {
     padding-left: 1em;
 }
 
-    blockquote p {
-        font-family: @secondaryFontFamily;
-        font-size: 1.6em;
-        font-weight: 300;
-        line-height: 1.2em;
-        font-style: italic;
-        text-transform: uppercase;
-    }
+blockquote p {
+    font-family: @secondaryFontFamily;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.2em;
+    font-style: italic;
+    text-transform: uppercase;
+}
 
 .post-meta {
     color: @postmetaColor;
@@ -270,13 +294,17 @@ div.authorimage {
   float: left;
 }
 
-h1.post-title a, h1.blog-title a {
+h1.post-title a, 
+h1.blog-title a {
     color: @headerLinkColor;
     transition: color ease 0.7s;
     -webkit-transition: color ease 0.7s;
 }
 
-h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {
+h1.post-title a:focus, 
+h1.post-title a:hover, 
+h1.blog-title a:focus, 
+h1.blog-title a:hover {
     color: @linkColor;
     text-decoration: none;
 }
@@ -320,15 +348,15 @@ footer {
     text-align: center;
 }
 
-    footer section {
-        font-family: @secondaryFontFamily;
-        font-weight: 300;
-        font-size: 18px;
-        margin: 0 auto;
-        max-width: 600px;
-        text-transform: uppercase;
-        width: 90%;
-    }
+footer section {
+    font-family: @secondaryFontFamily;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-transform: uppercase;
+    width: 90%;
+}
 
 footer.post-footer {
     background: none;
@@ -422,11 +450,12 @@ a.archive-link {
     padding: 0.5em 0;
 }
 
-    .pagination a {
-        color: @linkColor
-    }
+.pagination a {
+    color: @linkColor
+}
 
-.older-posts, .newer-posts {
+.older-posts, 
+.newer-posts {
     position: absolute;
     display: inline-block;
     padding: 0;
@@ -449,7 +478,8 @@ a.archive-link {
     left: 0
 }
 
-.older-posts:hover, .newer-posts:hover {
+.older-posts:hover, 
+.newer-posts:hover {
     color: @linkColorHover;
     text-decoration: none;
 }
@@ -462,38 +492,40 @@ a.archive-link {
     border-collapse: collapse !important;
 }
 
-    .gist .gist-file {
-        font-family: @preFontFamily;
-        border: 1px solid @subtleColor !important;
-    }
+.gist .gist-file {
+    font-family: @preFontFamily;
+    border: 1px solid @subtleColor !important;
+}
 
-        .gist .gist-file .gist-meta {
-            font-family: @secondaryFontFamily !important;
-            font-weight: 300 !important;
-            text-transform: uppercase !important;
-            display: none !important; /* Hide GitHub attribution */
-        }
+.gist .gist-file .gist-meta {
+    font-family: @secondaryFontFamily !important;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    display: none !important; /* Hide GitHub attribution */
+}
 
-            .gist .gist-file .gist-meta a:visited {
-                color: @linkColor !important
-            }
+.gist .gist-file .gist-meta a:visited {
+    color: @linkColor !important
+}
 
-        .gist .gist-file .gist-data {
-            background: @gistBackgroundColor !important;
-            border-bottom: none !important; /* Hide GitHub attribution */
-        }
+.gist .gist-file .gist-data {
+    background: @gistBackgroundColor !important;
+    border-bottom: none !important; /* Hide GitHub attribution */
+}
 
-            .gist .gist-file .gist-data .line-numbers {
-                border-right: none !important
-            }
+.gist .gist-file .gist-data .line-numbers {
+    border-right: none !important
+}
 
-            .gist .gist-file .gist-data .line-numbers, .gist .gist-file .gist-meta {
-                background-color: @subtleColor !important
-            }
+.gist .gist-file .gist-data .line-numbers, 
+.gist .gist-file .gist-meta {
+    background-color: @subtleColor !important
+}
 
-            .gist .gist-file .gist-data .line-numbers, .gist .gist-file .gist-data .line-pre {
-                line-height: 1.2em !important
-            }
+.gist .gist-file .gist-data .line-numbers, 
+.gist .gist-file .gist-data .line-pre {
+    line-height: 1.2em !important
+}
 
 .hidden {
     text-indent: -9999px;
@@ -509,7 +541,8 @@ a.archive-link {
     font-style: normal;
 }
 
-.icon-ghost, .icon-feed {
+.icon-ghost, 
+.icon-feed {
     font-family: 'icons';
     speak: none;
     font-style: normal;
@@ -589,7 +622,8 @@ div[id^='___comments_'] iframe {
         width: auto
     }
 
-    .older-posts, .newer-posts {
+    .older-posts, 
+    .newer-posts {
         position: static
     }
 
