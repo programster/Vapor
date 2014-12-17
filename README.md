@@ -1,12 +1,14 @@
 # Programster Vapor
-This is my own custom version of [the Vapor theme](https://github.com/sethlilly/Vapor), which can be seen on the [Programster blog](blog.programster.org). 
+This is my own custom version of [the Vapor theme](https://github.com/sethlilly/Vapor), which can be seen on the [Programster blog](blog.programster.org).
 
 I have changed:
-* making main text black rather than grey so that it is easier to read.
+* Changing the main text to be black rather than grey so that it's easier to read.
 * the background of inline code is also grey, not just the code blocks
 * both the code blocks and the inline code no longer use alpha, but a solid grey.
 * There is no wrapping in code blocks. If the code is too wide, then a horizontal scrollbar is added to the block.
 * Enabled the Google+ comment system.
+* Conversion to em over px in font sizes etc.
+* subtly rounded corners on code blocks.
 
 ---------------------------------------
 # Vapor
