@@ -6,9 +6,11 @@ h3{font-size:1em}
 h2{font-size:1.5em}
 h1{font-size:2.25em}
 h1,h2,h3,h4,p,ul{margin-top:0;margin-bottom:0}
+ul{margin-bottom:1em}
 h2{margin-top:3em;margin-bottom:.3em}
 h3{margin-top:2em}
 p+p{margin-top:1em}
+p{font-family:"Merriweather","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif}
 h1{color:#151515;font-family:"Roboto Slab","Merriweather","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-weight:400;line-height:1.25}
 h1,.post-meta{text-align:center}
 h2{text-transform:uppercase;font-weight:600;padding-bottom:.3em;border-bottom:1px solid #f0f0f0}
@@ -25,15 +27,15 @@ p code,pre code{background-color:#f0f0f0;font-family:"Inconsolata",Courier,monos
 article.preview{margin-bottom:4em}article.preview p.readmore{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;margin-top:1em;text-transform:uppercase;font-weight:300;font-size:1.1em}
 #blog-logo{display:block;max-width:100px;margin:50px auto 0;text-align:center}#blog-logo div.bloglogo{width:100px;height:100px;border-radius:50%;background-size:cover !important;background-position:center center !important;background-color:#fff}
 h1.blog-title,h2.blog-description{text-align:center}
-h1.blog-title{font-size:2.48832em;line-height:1;margin-top:1em;margin-bottom:1em;padding:0}
+h1.blog-title{font-size:2.9859839999999997em;line-height:1;margin-top:1em;margin-bottom:1em;padding:0}
 h2.blog-description{margin-top:0;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;border-bottom:1px solid #ecf0f1;border-top:1px solid #ecf0f1;margin-bottom:2em;padding:.5em 1em;color:#7f8c8d;font-weight:300}
 section.footer-description{margin-bottom:1em}
 header.article-header,header.page-header{margin-bottom:3em}
-section.author,section.share{width:100%;text-align:left;text-transform:none}
+section.author,section.share{width:100%;text-align:left;text-transform:none;color:#7f8c8d}
 section.share{margin-top:1em;border-top:1px solid #ecf0f1;padding-top:1em;text-align:right}
 section.author h4,section.author p,section.share p{padding:0;margin:0}
 section.author h4{font-family:"Roboto Slab","Merriweather","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-weight:400;margin-bottom:4px}
-section.author p.attr,section.share p.info{font-size:.9em;line-height:2;text-transform:uppercase;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif}
+section.author p.attr,section.share p.info{font-size:1em;line-height:1;text-transform:uppercase;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif}
 section.share p.info.prompt{top:-5px;position:relative}
 section.author p.attr{margin-bottom:2px}
 section.share p.info{display:inline-block}
@@ -49,7 +51,7 @@ section.preview.archive h2{text-align:left}
 section.author{overflow:hidden}
 img.userimage{width:70px;max-width:70px;max-height:70px;border-radius:50%;margin-right:10px;float:left}
 footer{background:#f0f0f0;margin:4em 0 0;padding:2em 0;text-align:center}
-footer section{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-weight:300;font-size:1em;margin:0 auto;max-width:600px;text-transform:uppercase;width:90%}
+footer section{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-weight:300;font-size:1.1em;margin:0 auto;max-width:600px;text-transform:uppercase;width:90%}
 footer.post-footer{background:none;border-top:1px solid #ecf0f1;margin-top:1em}
 nav{border-bottom:1px solid #ecf0f1;border-top:1px solid #ecf0f1;margin-bottom:2em;text-align:center;margin:20px auto 2em auto;max-width:600px}nav ul{list-style:none;margin:0 auto;padding:0;width:100%;overflow:hidden;text-align:center}nav ul li{display:inline-block;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1em;font-weight:300;margin:0;padding:0 .5em;text-align:center;text-transform:uppercase}nav ul li a{display:block;padding:.5em 0}
 nav.menu{margin-bottom:2.5em}nav.menu li{margin:0 .5em;padding:0}nav.menu li:last-child{margin:0}
