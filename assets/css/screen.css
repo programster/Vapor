@@ -43,7 +43,7 @@ section.author p.bio{font-size:.9em;margin-left:82px}
 blockquote{margin-top:.5em;margin-left:.5em;padding-left:.5em}
 blockquote p{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1.4em;font-style:italic}
 .post-meta{color:#95a5a6;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1.2em;font-weight:300;margin-top:.5em;margin-bottom:1.2em;text-transform:uppercase}
-.tags{font-size:16px;margin-bottom:.6em}
+.tags{font-size:16px;margin-bottom:.6em;margin-top:2em}
 div.authorimage{width:70px;height:70px;border-radius:50%;background-size:cover !important;background-position:center center !important;margin-right:10px;float:left}
 h1.post-title a,h1.blog-title a{color:#151515;transition:color ease .7s;-webkit-transition:color ease .7s}
 h1.post-title a:focus,h1.post-title a:hover,h1.blog-title a:focus,h1.blog-title a:hover{color:#3498db;text-decoration:none}
