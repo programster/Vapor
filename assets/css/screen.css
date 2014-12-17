@@ -21,7 +21,7 @@ dt{font-weight:400}
 li{padding-left:.8em}
 pre{padding:1em;background-color:#f0f0f0;overflow-x:auto;border-radius:5px}
 pre code{white-space:pre}
-p code,pre code{background-color:#f0f0f0;font-family:"Inconsolata",Courier,monospace}
+code,pre code{background-color:#f0f0f0;font-family:"Inconsolata",Courier,monospace}
 #site-head,article,article.preview,a.archive-link,.article-nav{margin:20px auto;max-width:600px;width:90%}
 #site-head img{max-width:100%}
 article.preview{margin-bottom:4em}article.preview p.readmore{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;margin-top:1em;text-transform:uppercase;font-weight:300;font-size:1.1em}
@@ -40,7 +40,8 @@ section.share p.info.prompt{top:-5px;position:relative}
 section.author p.attr{margin-bottom:2px}
 section.share p.info{display:inline-block}
 section.author p.bio{font-size:.9em;margin-left:82px}
-blockquote{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1.4em;font-style:italic;margin-top:.5em;margin-left:.5em;padding-left:.5em}
+blockquote{margin-top:.5em;margin-left:.5em;padding-left:.5em}
+blockquote p{font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1.4em;font-style:italic}
 .post-meta{color:#95a5a6;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;font-size:1.2em;font-weight:300;margin-top:.5em;margin-bottom:1.2em;text-transform:uppercase}
 .tags{font-size:16px;margin-bottom:.6em}
 div.authorimage{width:70px;height:70px;border-radius:50%;background-size:cover !important;background-position:center center !important;margin-right:10px;float:left}

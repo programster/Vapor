@@ -157,7 +157,7 @@ pre code {
     white-space: pre;
 }
 
-p code,
+code,
 pre code {
     background-color: @subtleColor;
     font-family: @preFontFamily;
@@ -298,12 +298,15 @@ section.author p.bio {
 }
 
 blockquote {
-    font-family: @secondaryFontFamily;
-    font-size: (@baseFontSize * 1.4);
-    font-style: italic;
     margin-top: 0.5em;
     margin-left: 0.5em;
     padding-left: 0.5em;
+}
+
+blockquote p {
+    font-family: @secondaryFontFamily;
+    font-size: (@baseFontSize * 1.4);
+    font-style: italic;
 }
 
 .post-meta {
