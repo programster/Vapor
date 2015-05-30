@@ -29,7 +29,7 @@ article.preview{margin-bottom:4em}article.preview p.readmore{font-family:"Open S
 #blog-logo{display:block;max-width:100px;margin:50px auto 0;text-align:center}#blog-logo div.bloglogo{width:100px;height:100px;border-radius:50%;background-size:cover !important;background-position:center center !important;background-color:#2d323c}
 h1.blog-title,h2.blog-description{text-align:center}
 h1.blog-title{font-size:2.9859839999999997em;line-height:1;margin-top:1em;margin-bottom:1em;padding:0}
-h2.blog-description{margin-top:0;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;border-bottom:1px solid #1b1e23;margin-bottom:2em;padding:.5em 1em;color:#c3c6cf;font-weight:300}
+h2.blog-description{margin-top:0;font-family:"Open Sans Condensed","Open Sans","Helvetica Neue",Helvetica,Arial,"Nimbus L",sans-serif;border-bottom:1px solid #1b1e23;border-top:1px solid #1b1e23;margin-bottom:2em;padding:.5em 1em;color:#c3c6cf;font-weight:300}
 section.footer-description{margin-bottom:1em}
 header.article-header,header.page-header{margin-bottom:3em}
 section.author,section.share{width:100%;text-align:left;text-transform:none;color:#c3c6cf}
