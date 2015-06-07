@@ -1,4 +1,4 @@
-# Programster Vapor
+# Programster Vapor-dark
 This is my own custom version of [the Vapor theme](https://github.com/sethlilly/Vapor), which can be seen on the [Programster blog](blog.programster.org).
 
 I have changed:
