@@ -7,24 +7,25 @@
 
 // Variables
 
-@bodyBackgroundColor: #ffffff;
-@baseFontFamily: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@baseFontColor: #000000;
-@secondaryFontColor: #7f8c8d;
+@bodyBackgroundColor: #2d323c;
+@baseFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+@baseFontColor: #C8CCD5;
+@secondaryFontColor: #c3c6cf;
 @baseFontSize: 1em;
 @fontSizeStepping: 1.5;
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
-@headerFontColor: #151515;
+@headerFontColor: #ffffff;
 @headerLinkColor: @headerFontColor;
 @secondaryFontFamily: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @preFontFamily: "Inconsolata", Courier, monospace;
 @tableFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@linkColor: #3498db;
-@linkColorHover: darken(@linkColor, 50%);
-@borderColor: #ecf0f1;
-@subtleColor: rgb(240,240,240);
+@linkColor: #6494ed;
+@linkColorHover: darken(@linkColor, 10%);
+@borderColor: #1B1E23;
+@subtleColor: #272B33;
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
+@h2LineColor: #1B1E23;
 
 @maxPageWidth: 600px;
 
@@ -112,10 +113,15 @@ h1,
 }
 
 h2 {
-    text-transform: uppercase;
-    font-weight: 600;
+    /*text-transform: uppercase;*/
+    font-weight: 900;
     padding-bottom: 0.3em;
-    border-bottom: 1px solid @subtleColor;
+    border-bottom: 1px solid @h2LineColor;
+}
+
+hr {
+    color: @h2LineColor;
+    border-bottom: none;
 }
 
 a, 
@@ -605,7 +611,7 @@ a.archive-link {
 /* Comments */
 
 #disqus_thread {
-    color: #787878; 
+    /* color: #787878; */ 
 }
 
 /* Tables */
