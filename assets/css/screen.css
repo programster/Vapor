@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Inconsolata:400,600|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
+@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Roboto+Mono:400,500|Bitter:400,700,400italic|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
@@ -6,7 +6,7 @@ body {
   background-color: #2d323c;
   color: #c8ccd5;
   font-size: 1em;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 100;
   line-height: 1.5;
   margin: 0;
@@ -52,7 +52,7 @@ p + p {
 }
 /* =================================== */
 p {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
 h1 {
   color: #ffffff;
@@ -66,7 +66,7 @@ h1,
 }
 h2 {
   /*text-transform: uppercase;*/
-
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 900;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #1b1e23;
@@ -103,6 +103,8 @@ pre {
   background-color: #272b33;
   overflow-x: auto;
   border-radius: 5px;
+  font-family: "Roboto Mono", Courier, monospace;
+  font-size: 90%;
 }
 pre code {
   white-space: pre;
@@ -110,7 +112,7 @@ pre code {
 code,
 pre code {
   background-color: #272b33;
-  font-family: "Inconsolata", Courier, monospace;
+  font-family: "Roboto Mono", Courier, monospace;
 }
 #site-head,
 article,
@@ -424,7 +426,7 @@ a.archive-link {
   border-collapse: collapse !important;
 }
 .gist .gist-file {
-  font-family: "Inconsolata", Courier, monospace;
+  font-family: "Roboto Mono", Courier, monospace;
   border: 1px solid #272b33 !important;
 }
 .gist .gist-file .gist-meta {
