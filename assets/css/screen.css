@@ -3,8 +3,8 @@
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
 body {
-  background-color: #2d323c;
-  color: #c8ccd5;
+  background-color: #f6f6f6;
+  color: #26292c;
   font-size: 1em;
   font-family: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 100;
@@ -41,8 +41,14 @@ ul {
   margin-bottom: 1em;
 }
 h2 {
-  margin-top: 3em;
+  margin-top: 0;
   margin-bottom: 0.3em;
+}
+p + h2,
+pre + h2,
+ul + h2,
+img + h2 {
+  margin-top: 3em;
 }
 h3 {
   margin-top: 2em;
@@ -55,8 +61,8 @@ p {
   font-family: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
 h1 {
-  color: #ffffff;
-  font-family: "Roboto Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  color: #26292c;
+  font-family: "Roboto Slab", "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 400;
   line-height: 1.25;
 }
@@ -66,25 +72,25 @@ h1,
 }
 h2 {
   /*text-transform: uppercase;*/
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+
   font-weight: 900;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #1b1e23;
+  border-bottom: 1px solid #ecf0f1;
 }
 hr {
-  color: #1b1e23;
+  color: #ecf0f1;
   border-bottom: none;
 }
 a,
 a:visited {
-  color: #6494ed;
+  color: #498bf5;
   text-decoration: none;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
 a:focus,
 a:hover {
-  color: #3674e8;
+  color: #09419c;
 }
 p,
 li,
@@ -98,21 +104,54 @@ dt {
 li {
   padding-left: 0.8em;
 }
-pre {
+pre,
+pre code {
   padding: 1em;
-  background-color: #272b33;
+  background-color: #26292c;
   overflow-x: auto;
   border-radius: 5px;
   font-family: "Roboto Mono", Courier, monospace;
-  font-size: 90%;
+  color: white;
 }
 pre code {
+  padding: 0em;
   white-space: pre;
 }
-code,
-pre code {
-  background-color: #272b33;
+code {
+  background-color: #f0f0f0;
   font-family: "Roboto Mono", Courier, monospace;
+  white-space: pre;
+}
+pre + p,
+pre code + p {
+  margin-top: 2em;
+}
+p + pre p + pre code {
+  margin-top: 0em;
+}
+note {
+  padding: 1em;
+  background-color: #31b0d5;
+  border-radius: 5px;
+  color: #000000;
+  display: block;
+}
+note:before {
+  display: block;
+  content: "Note:";
+  font-weight: 700;
+}
+warning {
+  padding: 1em;
+  background-color: #c9302c;
+  border-radius: 5px;
+  color: #000000;
+  display: block;
+}
+warning:before {
+  display: block;
+  content: "Warning:";
+  font-weight: 700;
 }
 #site-head,
 article,
@@ -149,7 +188,7 @@ article.preview p.readmore {
   border-radius: 50%;
   background-size: cover !important;
   background-position: center center !important;
-  background-color: #2d323c;
+  background-color: #f6f6f6;
 }
 h1.blog-title,
 h2.blog-description {
@@ -165,11 +204,11 @@ h1.blog-title {
 h2.blog-description {
   margin-top: 0em;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  border-bottom: 1px solid #1b1e23;
-  border-top: 1px solid #1b1e23;
+  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ecf0f1;
   margin-bottom: 2em;
   padding: .5em 1em;
-  color: #c3c6cf;
+  color: #646464;
   font-weight: 300;
 }
 section.footer-description {
@@ -185,11 +224,11 @@ section.share {
   width: 100%;
   text-align: left;
   text-transform: none;
-  color: #c3c6cf;
+  color: #646464;
 }
 section.share {
   margin-top: 1em;
-  border-top: 1px solid #1b1e23;
+  border-top: 1px solid #ecf0f1;
   padding-top: 1em;
   text-align: right;
 }
@@ -200,7 +239,7 @@ section.share p {
   margin: 0;
 }
 section.author h4 {
-  font-family: "Roboto Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Roboto Slab", "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 400;
   margin-bottom: 4px;
 }
@@ -260,7 +299,7 @@ div.authorimage {
 }
 h1.post-title a,
 h1.blog-title a {
-  color: #ffffff;
+  color: #26292c;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
@@ -268,7 +307,7 @@ h1.post-title a:focus,
 h1.post-title a:hover,
 h1.blog-title a:focus,
 h1.blog-title a:hover {
-  color: #6494ed;
+  color: #498bf5;
   text-decoration: none;
 }
 section.post-content img {
@@ -292,7 +331,7 @@ img.userimage {
 }
 /* === Footer === */
 footer {
-  background: #272b33;
+  background: #f0f0f0;
   margin: 4em 0 0;
   padding: 2em 0;
   text-align: center;
@@ -308,13 +347,13 @@ footer section {
 }
 footer.post-footer {
   background: none;
-  border-top: 1px solid #1b1e23;
+  border-top: 1px solid #ecf0f1;
   margin-top: 1em;
 }
 /* === Navigation and Pagination === */
 nav {
-  border-bottom: 1px solid #1b1e23;
-  border-top: 1px solid #1b1e23;
+  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ecf0f1;
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
@@ -368,8 +407,8 @@ nav.pagination li:last-child {
   text-align: left;
 }
 a.archive-link {
-  border-bottom: 1px solid #1b1e23;
-  border-top: 1px solid #1b1e23;
+  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ecf0f1;
   display: block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 2em;
@@ -387,12 +426,12 @@ a.archive-link {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   text-transform: uppercase;
   font-size: 1.3em;
-  color: #c3c6cf;
+  color: #646464;
   text-align: center;
   padding: 0.5em 0;
 }
 .pagination a {
-  color: #6494ed;
+  color: #498bf5;
 }
 .older-posts,
 .newer-posts {
@@ -416,7 +455,7 @@ a.archive-link {
 }
 .older-posts:hover,
 .newer-posts:hover {
-  color: #3674e8;
+  color: #09419c;
   text-decoration: none;
 }
 /* === Extras === */
@@ -427,7 +466,7 @@ a.archive-link {
 }
 .gist .gist-file {
   font-family: "Roboto Mono", Courier, monospace;
-  border: 1px solid #272b33 !important;
+  border: 1px solid #f0f0f0 !important;
 }
 .gist .gist-file .gist-meta {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif !important;
@@ -438,7 +477,7 @@ a.archive-link {
 
 }
 .gist .gist-file .gist-meta a:visited {
-  color: #6494ed !important;
+  color: #498bf5 !important;
 }
 .gist .gist-file .gist-data {
   background: #fdfdfd !important;
@@ -451,7 +490,7 @@ a.archive-link {
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-meta {
-  background-color: #272b33 !important;
+  background-color: #f0f0f0 !important;
 }
 .gist .gist-file .gist-data .line-numbers,
 .gist .gist-file .gist-data .line-pre {
@@ -499,7 +538,7 @@ a.archive-link {
 /* Tables */
 table {
   width: 100%;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   border-collapse: collapse;
   margin: 1em 0 3em;
 }
@@ -508,15 +547,15 @@ table td {
 }
 table thead {
   font-weight: 600;
-  border-bottom: 1px solid #1b1e23;
+  border-bottom: 1px solid #ecf0f1;
 }
 table tbody tr:nth-child(even) {
-  background-color: #1b1e23;
-  border-top: 1px solid #14171a;
-  border-bottom: 1px solid #14171a;
+  background-color: #ecf0f1;
+  border-top: 1px solid #e3e9eb;
+  border-bottom: 1px solid #e3e9eb;
 }
 table tfoot {
-  border-top: 1px solid #1b1e23;
+  border-top: 1px solid #ecf0f1;
 }
 /*
  * Prevent google+ comment system from creating horizontal scroll on 

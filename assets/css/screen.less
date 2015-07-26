@@ -2,30 +2,36 @@
 
 // Imports
 
-@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Inconsolata:400,600|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
+@import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Roboto+Mono:400,500|Bitter:400,700,400italic|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 // Variables
 
-@bodyBackgroundColor: #2d323c;
-@baseFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@baseFontColor: #C8CCD5;
-@secondaryFontColor: #c3c6cf;
+@bodyBackgroundColor: #f6f6f6;
+@preBackground: #26292c;
+@baseFontFamily: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+@baseFontColor: #26292c;
+@secondaryFontColor: rgb(100,100,100);
 @baseFontSize: 1em;
 @fontSizeStepping: 1.5;
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
-@headerFontColor: #ffffff;
+@headerFontColor: @baseFontColor;
 @headerLinkColor: @headerFontColor;
 @secondaryFontFamily: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@preFontFamily: "Inconsolata", Courier, monospace;
-@tableFontFamily: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-@linkColor: #6494ed;
-@linkColorHover: darken(@linkColor, 10%);
-@borderColor: #1B1E23;
-@subtleColor: #272B33;
+@preFontFamily: "Roboto Mono", Courier, monospace;
+@tableFontFamily: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+@linkColor: #498BF5;
+@linkColorHover: darken(@linkColor, 30%);
+@borderColor: #ecf0f1;
+@subtleColor: rgb(240,240,240);
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
-@h2LineColor: #1B1E23;
+@h2LineColor: @borderColor;
+
+@noteBackgroundColor: #31B0D5;
+@noteFontColor: rgb(0,0,0);
+@warningBackgroundColor: #C9302C;
+@warningFontColor: @noteFontColor;
 
 @maxPageWidth: 600px;
 
@@ -82,8 +88,16 @@ ul {
 }
 
 h2 {
-    margin-top: @baseFontSize * 3;
+    margin-top: 0;
     margin-bottom: 0.3em;
+}
+
+// Only have a space above h2 if there is content above it
+p + h2,
+pre + h2,
+ul + h2,
+img + h2 {
+    margin-top: @baseFontSize * 3;
 }
 
 h3 {
@@ -152,21 +166,63 @@ li {
     padding-left: .8em
 }
 
-pre {
+pre,
+pre code {
     padding: 1em;
-    background-color: @subtleColor;
+    background-color: @preBackground;
     overflow-x: auto;
     border-radius: 5px;
+    font-family: @preFontFamily;
+    color: white;
 }
 
 pre code {
+    padding: 0em;
     white-space: pre;
 }
 
-code,
-pre code {
+code {
     background-color: @subtleColor;
     font-family: @preFontFamily;
+    white-space: pre;
+}
+
+pre + p,
+pre code + p {
+    margin-top: @baseFontSize * 2;
+}
+
+p + pre
+p + pre code {
+    margin-top: @baseFontSize * 0;
+}
+
+note {
+    padding: 1em;
+    background-color: @noteBackgroundColor;
+    border-radius: 5px;
+    color: @noteFontColor;
+    display: block;
+}
+
+note:before{
+    display:block;
+    content: "Note:";
+    font-weight: 700;
+}
+
+warning {
+    padding: 1em;
+    background-color: @warningBackgroundColor;
+    border-radius: 5px;
+    color: @warningFontColor;
+    display: block;
+}
+
+warning:before{
+    display:block;
+    content: "Warning:";
+    font-weight: 700;
 }
 
 
