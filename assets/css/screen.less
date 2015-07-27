@@ -203,6 +203,13 @@ note {
     border-radius: 5px;
     color: @noteFontColor;
     display: block;
+
+    a,
+    a:visited,
+    a:hover {
+        color: @noteBackgroundColor;
+        text-decoration: underline;
+    }
 }
 
 note:before{
@@ -217,6 +224,14 @@ warning {
     border-radius: 5px;
     color: @warningFontColor;
     display: block;
+
+    a,
+    a:visited,
+    a:hover {
+        color: @warningFontColor;
+        text-decoration: underline;
+    }
+
 }
 
 warning:before{

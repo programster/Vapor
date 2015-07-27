@@ -136,6 +136,12 @@ note {
   color: #000000;
   display: block;
 }
+note a,
+note a:visited,
+note a:hover {
+  color: #64c8ff;
+  text-decoration: underline;
+}
 note:before {
   display: block;
   content: "Note:";
@@ -147,6 +153,12 @@ warning {
   border-radius: 5px;
   color: #000000;
   display: block;
+}
+warning a,
+warning a:visited,
+warning a:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 warning:before {
   display: block;
