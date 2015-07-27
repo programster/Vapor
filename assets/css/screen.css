@@ -131,7 +131,7 @@ p + pre p + pre code {
 }
 note {
   padding: 1em;
-  background-color: #31b0d5;
+  background-color: #64c8ff;
   border-radius: 5px;
   color: #000000;
   display: block;
@@ -143,7 +143,7 @@ note:before {
 }
 warning {
   padding: 1em;
-  background-color: #c9302c;
+  background-color: #ff3c3c;
   border-radius: 5px;
   color: #000000;
   display: block;
