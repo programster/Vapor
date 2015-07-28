@@ -24,6 +24,7 @@
 @linkColorHover: darken(@linkColor, 30%);
 @borderColor: rgba(0,0,0,0.1);
 @subtleColor: rgb(240,240,240);
+@noteSubtleColor: rgba(255,255,255,0.2);
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
 @h2LineColor: @borderColor;
@@ -216,6 +217,10 @@ note {
         color: @noteBackgroundColor;
         text-decoration: underline;
     }
+
+    code {
+        background-color: @noteSubtleColor;
+    }
 }
 
 note:before{
@@ -238,6 +243,9 @@ warning {
         text-decoration: underline;
     }
 
+    code {
+        background-color: @noteSubtleColor;
+    }
 }
 
 warning:before{

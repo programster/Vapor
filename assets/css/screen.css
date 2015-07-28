@@ -145,6 +145,9 @@ note a:hover {
   color: #64c8ff;
   text-decoration: underline;
 }
+note code {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 note:before {
   display: block;
   content: "Note:";
@@ -162,6 +165,9 @@ warning a:visited,
 warning a:hover {
   color: #000000;
   text-decoration: underline;
+}
+warning code {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 warning:before {
   display: block;
