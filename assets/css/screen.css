@@ -53,6 +53,9 @@ img + h2 {
 h3 {
   margin-top: 2em;
 }
+h2 + h3 {
+  margin-top: 1em;
+}
 p + p {
   margin-top: 1em;
 }
@@ -75,10 +78,10 @@ h2 {
 
   font-weight: 900;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 hr {
-  color: #ecf0f1;
+  color: rgba(0, 0, 0, 0.1);
   border-bottom: none;
 }
 a,
@@ -149,7 +152,7 @@ note:before {
 }
 warning {
   padding: 1em;
-  background-color: #ff3c3c;
+  background-color: rgba(255, 0, 0, 0.7);
   border-radius: 5px;
   color: #000000;
   display: block;
@@ -183,7 +186,7 @@ article.preview {
   background-color: white;
   border-radius: 5px;
   display: block;
-  border: 1px solid #ecf0f1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
 }
 #site-head img {
@@ -270,8 +273,8 @@ h1.blog-title {
 h2.blog-description {
   margin-top: 0em;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 2em;
   padding: .5em 1em;
   color: #646464;
@@ -294,7 +297,7 @@ section.share {
 }
 section.share {
   margin-top: 1em;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1em;
   text-align: right;
 }
@@ -413,13 +416,13 @@ footer section {
 }
 footer.post-footer {
   background: none;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 1em;
 }
 /* === Navigation and Pagination === */
 nav {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
@@ -473,8 +476,8 @@ nav.pagination li:last-child {
   text-align: left;
 }
 a.archive-link {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 2em;
@@ -613,15 +616,15 @@ table td {
 }
 table thead {
   font-weight: 600;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 table tbody tr:nth-child(even) {
-  background-color: #ecf0f1;
-  border-top: 1px solid #e3e9eb;
-  border-bottom: 1px solid #e3e9eb;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 table tfoot {
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 /*
  * Prevent google+ comment system from creating horizontal scroll on 

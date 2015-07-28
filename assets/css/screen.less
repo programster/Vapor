@@ -22,7 +22,7 @@
 @tableFontFamily: "Bitter", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @linkColor: #498BF5;
 @linkColorHover: darken(@linkColor, 30%);
-@borderColor: #ecf0f1;
+@borderColor: rgba(0,0,0,0.1);
 @subtleColor: rgb(240,240,240);
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
@@ -30,7 +30,7 @@
 
 @noteBackgroundColor: rgb(100,200,255);
 @noteFontColor: rgb(0,0,0);
-@warningBackgroundColor: rgb(255,60,60);
+@warningBackgroundColor: rgba(255,0,0, 0.7);
 @warningFontColor: @noteFontColor;
 
 @maxPageWidth: 600px;
@@ -100,8 +100,14 @@ img + h2 {
     margin-top: @baseFontSize * 3;
 }
 
+
+
 h3 {
     margin-top: @baseFontSize * 2;
+}
+
+h2 + h3 {
+    margin-top: @baseFontSize;
 }
 
 // paragraphs should have a space between each other.
